@@ -1,0 +1,22 @@
+<ons-page id="memo5-page">
+      <ons-toolbar> 
+        <div class="left"><ons-back-button>戻る</ons-back-button></div>
+        <div class="center">追加</div>
+    </ons-toolbar>
+
+     <div id="data_area">
+    <label for="kigyou_name">企業名：</label>
+    <input class="text-input" id="kigyou_name" value="" placeholder="企業名を入力してください">
+    <br>
+    <label for="kigyou_description">メモ：</label>
+    <br>
+    <textarea  id="kigyou_description" rows="20" cols="40" wrap="hard"></textarea>
+  </div>
+
+  <div id="op_area">
+    <ons-button id="regist_button" onclick="registkigyou()">登録</ons-button>
+    <ons-button id="cancel_button" onclick="cancelkigyou()">取消</ons-button>
+    <ons-button id="clear_button" onclick="removekigyouData()" modifier="quiet">全消去</ons-button>
+
+  </div>
+    </ons-page>

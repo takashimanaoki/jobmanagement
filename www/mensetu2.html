@@ -1,0 +1,21 @@
+<ons-page id="mensetu2-page">
+      <ons-toolbar> 
+        <div class="left"><ons-back-button>戻る</ons-back-button></div>
+        <div class="center">追加</div>
+    </ons-toolbar>
+
+     <div id="data_area">
+    <label for="mensetu_name">質問：</label>
+    <input class="text-input" id="mensetu_name" value="" placeholder="質問を入力してください">
+    <br>
+    <label for="mensetu_description">反省：</label>
+    <textarea name="mensetu" id="mensetu_description"rows="20" cols="40" wrap="hard"></textarea>
+  </div>
+
+  <div id="op_area">
+    <ons-button id="regist_button" onclick="registmensetu()">登録</ons-button>
+    <ons-button id="cancel_button" onclick="cancelmensetu()">取消</ons-button>
+    <ons-button id="clear_button" onclick="removeAllData()" modifier="quiet">全消去</ons-button>
+
+  </div>
+    </ons-page>
